@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — DETECTMiND</title>
+<meta name="description" content="Privacy policy for the DETECTMiND research participant app." />
+<link rel="icon" href="assets/detectmind-icon.png" type="image/png" />
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    line-height: 1.65;
+    color: #1C1C2E;
+    background: #F7F8FB;
+  }
+  a.back { color: #4A6FA5; text-decoration: none; font-size: 14px; }
+  a.back:hover { text-decoration: underline; }
+  h1 { font-size: 28px; margin: 16px 0 8px; color: #1A2545; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: #1A2545; }
+  p { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  th, td { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #E8EBF2; font-size: 14px; }
+  th { background: #EEF1F6; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .meta { color: #5A6478; font-size: 13px; margin-bottom: 24px; }
+  footer { margin-top: 48px; color: #5A6478; font-size: 13px; text-align: center; }
+  footer a { color: #4A6FA5; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<a class="back" href="./">← DETECTMiND home</a>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: <strong>TODO update date</strong> · Data controller: University of Southampton</p>
+
+<p>This privacy policy explains how the <strong>DETECTMiND</strong> research app collects, uses, and protects data from participants. By installing and using the app, you agree to the practices described here.</p>
+
+<h2>1. Who is responsible</h2>
+<p>The research study is led by <strong>Dr Anoop Kadan</strong>, Lecturer in Machine Learning at the University of Southampton (email: <a href="mailto:A.Kadan@soton.ac.uk">A.Kadan@soton.ac.uk</a>). The University of Southampton is the data controller under UK GDPR.</p>
+
+<h2>2. What data is collected</h2>
+<p>Only the sensors enabled for your specific study cohort are collected. The full set of possible sensors:</p>
+<table>
+  <thead>
+    <tr><th>Sensor</th><th>What is recorded</th><th>Privacy handling</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>App usage</td><td>Which apps you open, start/end time, duration</td><td>Package name only — no in-app content</td></tr>
+    <tr><td>Notifications</td><td>App that posted a notification, time, title (if shown on lock screen)</td><td>No notification body content stored</td></tr>
+    <tr><td>Battery</td><td>Level, charging state, temperature, voltage</td><td>No identifiers</td></tr>
+    <tr><td>Calls</td><td>Direction (incoming/outgoing/missed), duration, time</td><td>Phone numbers are SHA-256 hashed before storage</td></tr>
+    <tr><td>SMS</td><td>Direction, time</td><td>Both contact number and message body are SHA-256 hashed; raw content never stored</td></tr>
+    <tr><td>Location</td><td>GPS coordinates, accuracy, speed</td><td>Collected per study config — sampling rate varies</td></tr>
+    <tr><td>Light</td><td>Ambient light sensor readings</td><td>No identifiers</td></tr>
+    <tr><td>Screen state</td><td>On / off / locked / unlocked events</td><td>No content</td></tr>
+    <tr><td>Gestures</td><td>Taps, scrolls, long-presses — type and target app only</td><td>No on-screen content; OS-enforced via accessibility privacy flag</td></tr>
+    <tr><td>Survey responses (ESM)</td><td>Your answers to short scheduled questions</td><td>Linked to your participant ID only</td></tr>
+  </tbody>
+</table>
+
+<h2>3. What is NOT collected</h2>
+<ul>
+  <li>The content of messages, emails, or notifications</li>
+  <li>Phone numbers in plain text (only hashed)</li>
+  <li>What you type, see, or hear on the screen</li>
+  <li>Audio, video, photos, or microphone input</li>
+  <li>Browsing history or web content</li>
+  <li>Your real name or contact details (only your participant ID)</li>
+</ul>
+
+<h2>4. How data is stored and transmitted</h2>
+<ul>
+  <li>All data is first stored locally on your device's encrypted app storage.</li>
+  <li>Data is uploaded over HTTPS (TLS 1.2+) to a research database hosted by Supabase Inc. on EU servers.</li>
+  <li>Each upload is associated only with your study participant ID (a random UUID); your real identity is held separately by the research team in line with university data-management procedures.</li>
+</ul>
+
+<h2>5. Who can see the data</h2>
+<ul>
+  <li>The research team at the University of Southampton.</li>
+  <li>The university's research ethics committee, if requested for audit purposes.</li>
+  <li>Data is not shared with advertisers, marketers, or any commercial third party.</li>
+</ul>
+
+<h2>6. How long data is kept</h2>
+<p>Data is retained for the duration of the study plus the period required by the University of Southampton's research data management policy (typically <strong>10 years</strong> for published research outputs). After this period the data is securely destroyed.</p>
+
+<h2>7. Your rights under UK GDPR</h2>
+<ul>
+  <li><strong>Withdraw</strong> at any time, either from the app's Settings screen or by emailing the researcher.</li>
+  <li><strong>Request a copy</strong> of the data linked to your participant ID.</li>
+  <li><strong>Request deletion</strong> of your data from the research database.</li>
+  <li><strong>Complain</strong> to the UK Information Commissioner's Office (ICO) if you believe your rights have been infringed.</li>
+</ul>
+
+<h2>8. Banking-app pause feature</h2>
+<p>Some banking apps refuse to open when an accessibility service is active. DETECTMiND detects when you launch a configured banking app and prompts you (via notification) to pause gesture collection. We do not collect or transmit any data about your banking activity itself.</p>
+
+<h2>9. Security</h2>
+<p>The Android app stores data locally on your device using Android's standard app-private storage, encrypted at rest by the OS. Network transmission uses TLS 1.2 or higher. The server uses row-level security to ensure only the research team can read participant data.</p>
+
+<h2>10. Children</h2>
+<p>This app is not intended for use by anyone under 18. We do not knowingly collect data from minors.</p>
+
+<h2>11. Contact</h2>
+<p>For any questions about how your data is handled, contact:</p>
+<ul>
+  <li><strong>Dr Anoop Kadan</strong> · <a href="mailto:A.Kadan@soton.ac.uk">A.Kadan@soton.ac.uk</a></li>
+  <li>University of Southampton Data Protection Officer · <a href="mailto:data.protection@soton.ac.uk">data.protection@soton.ac.uk</a></li>
+</ul>
+
+<footer>
+  <a href="./">DETECTMiND home</a> · <a href="install/">Install instructions</a>
+</footer>
+
+</body>
+</html>
