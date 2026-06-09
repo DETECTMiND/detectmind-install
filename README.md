@@ -2,7 +2,7 @@
 
 Public landing page and APK distribution for the **DETECTMiND** Android research app.
 
-> Live at **https://binoybkp.github.io/detectmind-install/**
+> Live at **https://detectmind.github.io/android-app/**
 
 This repo contains only the install instructions, privacy policy, and signed APK releases — the app source code lives in a separate (private) repository.
 
